@@ -1,0 +1,317 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.scrollbar,
+#myTable {
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #d3d3d3;
+    border-radius: 3px;
+  }
+
+  &::-webkit-scrollbar-thumb:active {
+    background-color: #c7c7c7;
+  }
+}
+
+#myTable {
+  overflow-x: auto;
+}
+
+.sider {
+  position: fixed !important;
+}
+
+.pagination {
+  position: sticky !important;
+  bottom: 0;
+}
+
+.swiper {
+  width: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ant-table-cell .first-column {
+  position: sticky !important;
+  left: 0;
+  z-index: 999;
+  background-color: #fff;
+}
+
+.header {
+  width: -webkit-fill-available !important;
+}
+
+.main-or {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.or {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  color: #656f79;
+  padding: 0px 16px;
+  z-index: 1;
+  background-color: #fafdff;
+}
+
+.progress-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: #198ab6;
+  transform-origin: 0%;
+}
+
+.dropdownHeader:hover {
+  background-color: orange !important;
+}
+
+.background {
+  background-image: url("../assets/images/banner/banner_4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.background2 {
+  background-image: url("../assets/images/banner/banner_1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.background4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
+    url("../assets/images/banner/milk_banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.not-found-message {
+  display: block;
+}
+
+.not-found-message.hidden {
+  display: none;
+}
+
+.cssbuttons-io-button {
+  background: #08cde9;
+  color: white;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 25px;
+  // border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  /* box-shadow: inset 0 0 1.6em -0.6em #198ab6; */
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  cursor: pointer;
+}
+
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 25px;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #76a7bb;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #7b52b9;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+}
+
+.buttonAuthen {
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #08cde9;
+  transition: all 1000ms;
+  font-size: 15px;
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid #08cde9;
+}
+
+.buttonAuthen:hover {
+  color: #fff;
+  transform: scale(1.1);
+  outline: 2px solid #70bdca;
+  box-shadow: 4px 5px 17px -4px #08cde9;
+}
+
+.buttonAuthen::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #08cde9;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+
+.buttonAuthen:hover::before {
+  width: 250%;
+}
+
+//swipperjs
+.swiper-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+//antd
+:where(.css-1okl62o).ant-col-24.ant-form-item-label {
+  padding: 0 !important;
+}
+
+:where(.css-dev-only-do-not-override-1okl62o).ant-col-24.ant-form-item-label {
+  padding: 0 !important;
+}
+
+// :where(.css-dev-only-do-not-override-1okl62o) > .ant-form-item {
+//   margin-bottom: 10px !important;
+// }
+
+.ant-form-item-explain-error {
+  font-size: 12px !important;
+}
+
+:where(.css-dev-only-do-not-override-mzwlov).ant-form-item {
+  margin-bottom: 21px !important;
+}
+
+.formItem .ant-form-item-explain {
+  font-size: 13px !important;
+}
+
+.slick-list {
+  border-radius: 10px !important;
+}
+
+.formItem {
+  margin-bottom: 22px !important;
+}
+
+.formItem .ant-form-item-label label {
+  font-size: 12px !important;
+}
+
+.formItem
+  .ant-col.ant-col-24.ant-form-item-label.css-dev-only-do-not-override-mzwlov {
+  padding: 0 !important;
+}
+
+.ant-table-cell.column {
+  position: sticky !important;
+  left: 0 !important;
+  z-index: 999 !important;
+  background-color: #fff !important;
+}
+
+.ant-tooltip :where(.css-dev-only-do-not-override-1okl62o).ant-tooltip {
+  display: none !important;
+}
+
+.ant-table-cell {
+  border-bottom: none !important;
+}
+
+//responsive
+@media (min-width: 3000) {
+  .navbar {
+    width: 65%;
+  }
+}
+
+@media (min-width: 1900px) {
+  .productList {
+    grid-template-columns: repeat(5, 1fr) !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .right-bar {
+    margin-left: 55px !important;
+  }
+}
