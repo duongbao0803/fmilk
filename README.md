@@ -46,7 +46,7 @@ FMilk is a web-app, which designed to provide a comprehensive and convenient onl
 
 ###### Admin
 
-![FMilk-Admin](https://firebasestorage.googleapis.com/v0/b/swd392-d2c4e.appspot.com/o/FMilk%2FAdmin.png?alt=media&token=384081f1-d305-4a4f-ac9c-863381ccea11)
+![FMilk-Admin](https://firebasestorage.googleapis.com/v0/b/swd392-d2c4e.appspot.com/o/FMilk%2FScreenshot%202024-07-30%20165307.png?alt=media&token=4f2e3238-4793-4c8f-9d80-3054b0536a12)
 
 ###### More...
 
