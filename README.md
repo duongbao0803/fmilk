@@ -52,7 +52,7 @@ FMilk is a web-app, which designed to provide a comprehensive and convenient onl
 
 #### Techstacks:
 
-- Front-end: ReactJS, TailwindCSS, Ant Design, Zustand, Tanstack query, Firebase, ChartJS.
+- Front-end: ReactJS, TailwindCSS, Ant Design, Zustand, Tanstack query, Firebase, ChartJS, SwiperJS, Framer Motion.
 - Back-end: ExpressJS, MongoDB, MongoDB Atlas, Mongoose, Redis for caching.
 - Deployment: Render (Back-end), Vercel (Front-end), Redis Instance.
 - Other: GitHub, Jira, Swagger, JWT Token, Yarn.
